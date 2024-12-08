@@ -1,22 +1,24 @@
-
-# YouTube Live Stream Manager
+# YouTube Live Stream Manager with OBS Control
 
 ## Overview
-The YouTube Live Stream Manager is a Python-based desktop application that simplifies the management of YouTube live streams. It provides a user-friendly interface for creating, scheduling, starting, stopping live streams, and uploading thumbnails.
+The **YouTube Live Stream Manager with OBS Control** is a Python-based GUI application that allows users to:
+- Manage YouTube live streams (authentication, scheduling, uploading thumbnails, starting/stopping streams).
+- Control OBS Studio (connect, start/stop streaming, and select scenes) via WebSocket integration.
 
 ---
 
 ## Features
-- OAuth 2.0 authentication to securely connect to YouTube.
-- Create live streams with:
-  - Title (prepopulated with the current date and AM/PM).
-  - Start and end times (time selectable; date defaults to the current date).
-  - Privacy settings (Public, Unlisted, Private).
-  - Thumbnail upload.
-- Start and stop live streams with a single click.
-- Informative error handling for failed operations.
+### YouTube Features
+- **Authenticate**: OAuth2-based authentication with YouTube.
+- **Stream Management**: Create, view, and manage live streams.
+- **Thumbnail Upload**: Upload a custom thumbnail for a scheduled live stream.
+- **Dynamic Stream Key Selection**: Populate stream keys directly from the user's YouTube account.
+- **Privacy Defaults**: Default privacy set to "Unlisted".
 
----
+### OBS Features
+- **Connect to OBS**: Establish a WebSocket connection with OBS Studio.
+- **OBS Streaming**: Start/stop streaming directly from the application.
+- **Scene Management**: (Optional enhancement: Switch between scenes in OBS).
 
 ## Installation
 

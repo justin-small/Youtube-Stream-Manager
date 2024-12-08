@@ -22,10 +22,12 @@ The **YouTube Live Stream Manager with OBS Control** is a Python-based GUI appli
 
 ## Installation
 
-### Prerequisites
-- Python 3.7 or higher.
-- Google account with a YouTube channel.
-- `client_secrets.json` file (downloaded from the Google Cloud Console).
+## Prerequisites
+1. **Python 3.9 or higher**.
+2. **OBS Studio** with the WebSocket plugin enabled.
+3. **YouTube API Credentials**:
+   - Download `client_secrets.json` from your [Google Cloud Console](https://console.cloud.google.com/).
+
 
 ### Steps
 1. Clone the repository:
@@ -48,16 +50,42 @@ The **YouTube Live Stream Manager with OBS Control** is a Python-based GUI appli
 
 ---
 
-## Usage
-1. **Authenticate**:
-   - Log in with your Google account and grant the necessary permissions.
+# Create a Usage.md content in Markdown format
+usage_content = """
+# Usage Guide
 
-2. **Create a Live Stream**:
-   - Fill in the stream details, select start and end times, and upload a thumbnail.
-   - Click **"Create Live Stream"** to schedule the stream.
+## Authenticate:
+1. Click **"Authenticate"** to log in with your YouTube account.
+2. Cached credentials will be used on subsequent runs for convenience.
 
-3. **Start/Stop Live Stream**:
-   - Use the **Start Live Stream** and **Stop Live Stream** buttons to control the stream.
+---
+
+## Create a Live Stream:
+1. Fill out the required fields:
+   - **Stream Title**: Enter the title for your stream.
+   - **Start/End Time**: Set the schedule for the stream.
+   - **Stream Key**: Select a stream key from the dropdown.
+2. Click **"Create Live Stream"** to create the stream.
+
+---
+
+## Upload Thumbnail:
+1. Click the **"Upload Thumbnail"** button.
+2. Select an image file from your system to set as the thumbnail for the selected stream.
+
+---
+
+## OBS Integration:
+1. Use the **"Connect to OBS"** button to establish a WebSocket connection with OBS Studio.
+2. Start/stop streaming directly in OBS:
+   - Click **"Start OBS Streaming"** to begin streaming.
+   - Click **"Stop OBS Streaming"** to end the OBS stream.
+3. Manage OBS scenes (optional, if scene management is enabled in the app).
+
+---
+
+For additional information, refer to the [README](README.md) or contact the support team.
+"""
 
 ---
 

@@ -50,7 +50,7 @@ The **YouTube Live Stream Manager with OBS Control** is a Python-based GUI appli
 
 ---
 
-# Create a Usage.md content in Markdown format
+
 usage_content = """
 # Usage Guide
 
@@ -82,6 +82,21 @@ usage_content = """
    - Click **"Stop OBS Streaming"** to end the OBS stream.
 3. Manage OBS scenes (optional, if scene management is enabled in the app).
 
+# OBS Configuration File Format (`obs_config.json`)
+
+The OBS configuration file (`obs_config.json`) is used to store connection details for the OBS WebSocket server. This file is essential for enabling the application to connect to OBS Studio.
+
+---
+
+## **File Format**
+The configuration file must be a JSON file with the following structure:
+
+```json
+{
+    "host": "localhost",
+    "port": 4455,
+    "password": "your_password"
+}
 ---
 
 For additional information, refer to the [README](README.md) or contact the support team.

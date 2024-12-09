@@ -97,9 +97,7 @@ The configuration file must be a JSON file with the following structure:
     "port": 4455,
     "password": "your_password"
 }
----
 
-For additional information, refer to the [README](README.md) or contact the support team.
 """
 
 ---
